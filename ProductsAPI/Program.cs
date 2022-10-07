@@ -22,14 +22,6 @@ if (app.Environment.IsDevelopment())
 }
 
 
-
-app.UseMyMiddleware();
-//app.Use(async (context, next) =>
-//{
-//    await context.Response.WriteAsync("Hello World! my middleware");
-//    await next();
-//});
-
 app.UseHttpsRedirection();
 
 app.MapControllers();
