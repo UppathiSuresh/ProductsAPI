@@ -1,9 +1,7 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Mvc;
+//using Microsoft.EntityFrameworkCore;
 using ProductsAPI.Models;
 using System.Diagnostics;
-using System.Text.RegularExpressions;
 
 namespace ProductsAPI.Controllers
 {
@@ -25,7 +23,7 @@ namespace ProductsAPI.Controllers
         [HttpGet]
         public async Task<IEnumerable<Product>> GetALL()
         {
-            Debug.WriteLine("value:{}"+ _Configuration["Test"]);
+            Debug.WriteLine("value:{}" + _Configuration["Test"]);
             return await _context.Products.ToListAsync();
         }
 

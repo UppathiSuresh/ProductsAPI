@@ -1,5 +1,4 @@
 using Microsoft.EntityFrameworkCore;
-using ProductsAPI;
 using ProductsAPI.Models;
 var builder = WebApplication.CreateBuilder(args);
 
@@ -21,11 +20,9 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-
 app.UseHttpsRedirection();
 
 app.MapControllers();
 app.UseAuthorization();
-
 
 app.Run();

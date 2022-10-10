@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata;
+﻿//global using Microsoft.EntityFrameworkCore;
 
 namespace ProductsAPI.Models
 {
